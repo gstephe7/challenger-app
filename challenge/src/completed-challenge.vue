@@ -13,7 +13,7 @@
       <div class="row">
         <div class="col-xs-12">
           <video class="center-block" width="300px" height="300px" controls autoplay loop>
-            <source v-bind:src="currentVideo" type="video/mp4">
+            <source v-bind:src="randomVideo" type="video/mp4">
           </video>
         </div>
       </div>
@@ -40,11 +40,6 @@
 <script>
   export default {
     props: ['randomVideo'],
-    data: function () {
-      return {
-        currentVideo: this.randomVideo
-      }
-    },
     methods: {
       nextVideo: function () {
         this.$emit('generateVideo')

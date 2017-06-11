@@ -13,7 +13,7 @@
     <div class="section current-challenge container">
       <div class="row">
         <div class="col-xs-12">
-          <p v-text="currentChallenge"></p>
+          <p v-text="randomChallenge"></p>
         </div>
       </div>
     </div>
@@ -42,14 +42,9 @@
 <script>
   export default {
     props: ['challenges', 'randomChallenge', 'myChallenges'],
-    data: function () {
-      return {
-        currentChallenge: this.randomChallenge
-      }
-    },
     methods: {
       acceptChallenge: function () {
-        this.myChallenges.push(this.currentChallenge)
+        this.myChallenges.push(this.randomChallenge)
       },
       skipChallenge: function () {
         this.$emit('generateChallenge')
