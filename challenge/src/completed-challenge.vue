@@ -44,6 +44,9 @@
       nextVideo: function () {
         this.$emit('generateVideo')
       }
+    },
+    beforeMount: function () {
+      this.$emit('generateVideo')
     }
   }
 </script>

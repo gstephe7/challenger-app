@@ -55,6 +55,9 @@
       downVote: function () {
         console.log('downVote')
       }
+    },
+    beforeMount: function () {
+      this.$emit('generateChallenge')
     }
   }
 </script>

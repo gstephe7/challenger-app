@@ -37,7 +37,7 @@ export default {
         challengesCompleted: 500,
         myChallenges: []
       },
-      challenges: ['greg'],
+      challenges: ['greg', 'eat a frog', 'sit on a turtle'],
       randomChallenge: '',
       completedChallenges: [
         { src: '../static/video/dance.mp4' },
